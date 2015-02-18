@@ -1,0 +1,15 @@
+# Site settings
+title: 'Take Note : Simple Note Taking Made Easy'
+email: developer@nocturnalcode.com
+description: > # this means to ignore newlines until "baseurl:"
+  Take Note is a simple note taking App for iOS
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:4000" #"http://nocturnalcode.github.io/TakeNote" # the base hostname & protocol for your site
+twitter_username: NocturnalCode
+github_username:  NocturnalCode
+
+app_id: FIXME
+app_url: '#'
+
+# Build settings
+markdown: kramdown
