@@ -157,9 +157,9 @@ body.fullscreen {
 .footer {
   position: absolute;
   @media screen and (max-width: 400px) {
-    padding-top: 50px;
-    position: inherit;
-    bottom: default;
+    // margin-top: 50px;
+    // position: inherit;
+    bottom: 0;
   }
   font-size: medium;
   text-align: center;
