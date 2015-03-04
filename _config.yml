@@ -8,8 +8,8 @@ url: "http://take-note.io" # the base hostname & protocol for your site
 twitter_username: NocturnalCode
 github_username:  NocturnalCode
 
-app_id: FIXME
-app_url: '#'
+app_id: 967873702
+app_url: 'https://itunes.apple.com/us/app/take-note-simple-note-taking/id967873702?ls=1&mt=8'
 
 # Build settings
 markdown: kramdown
