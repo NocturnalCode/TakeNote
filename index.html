@@ -27,9 +27,35 @@ layout: fullscreen
     <h3>
       Simple, easy and clean. Just take notes!
     </h3>
+    <p>
+      <span id="count">0</span> notes taken and counting.
+    </p>
     <a class="appstore-badge" href="{{ site.app_url }}"><img width="270" height="80" src="{{ site.url }}/assets/AppStoreBadge.svg"/></a>
 </div>
 
 <div class="footer">
   <a href="/acknowledgements.html">acknowledgements</a> | <a href="https://github.com/NocturnalCode/TakeNote/">support</a> | <a href="http://www.twitter.com/NocturnalCode">@NocturnalCode</a>
 </div>
+
+<script src="//www.parsecdn.com/js/parse-1.3.5.min.js"></script>
+<script>
+
+  Parse.initialize("RChNJJ1rcuW0IYlZjcJAQazTwQUalJkqbOPR5v4B", "CGgMmqWeN74FteaC0eEF7h3r6fYzt7ZBJYsrBr2H");
+  var Note = Parse.Object.extend("Note");
+  var query = new Parse.Query(Note);
+
+  var getCount = function() {
+    query.count({
+      success: function(count) {
+        document.querySelectorAll('#count')[0].innerHTML = count;
+        setTimeout(getCount,10000);
+      },
+      error: function(error) {
+        // The request failed
+      }
+    });
+  };
+
+  getCount();
+
+</script>
